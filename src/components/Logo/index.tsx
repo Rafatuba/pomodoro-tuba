@@ -6,7 +6,9 @@ export function Logo() {
     <div className={style.logo}>
       <a className={style.logoLink} href="#">
         <IconStopwatch />
-        <span>Tuba Flow</span>
+        <span>
+          Tuba <span className={style.flow}>Flow</span>
+        </span>
       </a>
     </div>
   );
