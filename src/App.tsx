@@ -1,25 +1,17 @@
-import { IconStopwatch } from "@tabler/icons-react";
+import { Container } from "./components/Container";
 import { Heading } from "./components/Heading";
 import "./styles/global.css";
 import "./styles/theme.css";
 
-function App() {
+export function App() {
   return (
     <>
-      <Heading>
-        Olá mundo!
-        <button>
-          <IconStopwatch size={36} />
-        </button>
-      </Heading>
-      <p>Não contavam com minha astúcia!</p>
-      <img
-        src="https://static.wikia.nocookie.net/liberproeliis/images/1/1a/JdFcRwL.png/revision/latest?cb=20181210214019&path-prefix=pt-br"
-        alt="chapolin"
-        width={400}
-      />
+      <Container>
+        <Heading>Logo</Heading>
+      </Container>
+      <Container>
+        <Heading>Menu</Heading>
+      </Container>
     </>
   );
 }
-
-export default App;
